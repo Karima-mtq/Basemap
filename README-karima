@@ -1,0 +1,28 @@
+EOF Analysis on SST Datasets — Observation, Free, and Assimilation Experiments
+-------------------------------------------------------------------------------
+This repository contains a series of Jupyter notebooks performing Empirical Orthogonal Function (EOF) analyses on Sea Surface Temperature (SST) fields from various datasets and ocean model experiments.
+The objective is to compare the dominant variability patterns of SST under different configurations — from pure observations to several assimilation schemes.
+Datasets and Experiments
+------------------------
+Hadley Observation — SST observational dataset used as reference.
+Free Run (No Assimilation) — model simulation without any data assimilation.
+ODA (Oceanic Data Assimilation) — simulation with SST assimilation using the Deekman Filter method.
+NudF-UVT & NudA-UVT — experiments with assimilation of U, V, and T parameters through Newtonian relaxation (nudging), applied respectively to full-field and anomaly states.
+NudA-UV — assimilation of U and V components only, using the same nudging approach.
+Purpose
+-------
+The EOF analysis is used to:
+Identify the main spatial and temporal modes of SST variability.
+Compare how different assimilation methods affect the representation of dominant SST patterns.
+Quantify the variance explained by each mode across experiments.
+Repository Structure
+--------------------
+Each notebook corresponds to a specific dataset or experiment:
+TP_ACP_SST_hadley_global.ipynb
+EOF_SST_Free.ipynb
+EOF_SST_ODA.ipynb
+EOF_SST_NudF-UVT.ipynb
+EOF_SST_NudA-UVT.ipynb
+EOF_SST_NudA-UV.ipynb
+
+PS: (il en manque encore le EOF_SST_ODA_NudA-UVT.ipynb)
